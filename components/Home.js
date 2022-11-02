@@ -41,6 +41,7 @@ export default Home = () => {
           </View>
           <Image
             source={require('../assets/images/challenge.png')}
+            style={{ marginRight: -25 }}
           />
 
         </View>
@@ -59,36 +60,53 @@ export default Home = () => {
         fontSize: 14, fontWeight: '400', color: '#00FF7F', marginLeft: 20,
       }}>+$1,439.58(3.88%)</Text>
       <Chart
-        style={{ height: 350, width: 400 }}
+        style={{ height: 350, width: 450 }}
         data={[
-          { x: -2, y: 15 },
-          { x: -1, y: 10 },
-          { x: 0, y: 12 },
-          { x: 1, y: 7 },
-          { x: 2, y: 6 },
-          { x: 3, y: 8 },
-          { x: 4, y: 10 },
-          { x: 5, y: 8 },
-          { x: 6, y: 12 },
-          { x: 7, y: 14 },
-          { x: 8, y: 12 },
-          { x: 9, y: 13.5 },
-          { x: 10, y: 18 },
+          { x: -2, y: 10 },
+          { x: 6, y: 180 },
+          { x: 7, y: 90 },
+          { x: 8, y: 90 },
+          { x: 10, y: 90 },
+          { x: 10, y: 90 },
+          { x: 15, y: 99 },
+          { x: 20, y: 120 },
+          { x: 22, y: 130 },
+          { x: 25, y: 110 },
+          { x: 27, y: 132 },
+          { x: 33, y: 155 },
+          { x: 45, y: 147 },
+          { x: 46, y: 150 },
+          { x: 56, y: 142 },
+          { x: 57, y: 112 },
+          { x: 58, y: 135 },
+          { x: 59, y: 180 },
+          { x: 61, y: 40 },
+          { x: 62, y: 120 },
+          { x: 63, y: 172 },
+          { x: 65, y: 70 },
+          { x: 66, y: 60 },
+          { x: 80, y: 80 },
+          { x: 82, y: 90 },
+          { x: 84, y: 110 },
+          { x: 86, y: 112 },
+          { x: 89, y: 140 },
+          { x: 90, y: 102 },
+          { x: 92, y: 13.5 },
+          { x: 100, y: 200 },
         ]}
         padding={{ left: 40, bottom: 20, right: 20, top: 20 }}
-        xDomain={{ min: -2, max: 10 }}
-        yDomain={{ min: 0, max: 20 }}
+        xDomain={{ min: -2, max: 100 }}
+        yDomain={{ min: 0, max: 200 }}
       >
         <VerticalAxis tickCount={11} theme={{ labels: { formatter: (v) => v.toFixed(2) } }} />
         <HorizontalAxis tickCount={5} />
-        <Area theme={{ gradient: { from: { color: '#ffa502' }, to: { color: '#ffa502', opacity: 0.4 } } }} />
-        <Line theme={{ stroke: { color: '#ffa502', width: 5 }, scatter: { default: { width: 4, height: 4, rx: 2 } } }} />
+        <Line theme={{ stroke: { color: '#00FF7F', width: 3 }, scatter: { default: { width: 0, height: 2, rx: 2 } } }} />
       </Chart>
       <View style={styles.subWrapper}>
         <Text style={{
           fontSize: 14, fontWeight: '400', color: '#707070'
         }} >1H</Text>
-        <Text style={{ fontSize: 14, fontWeight: '400', color: '#111111' }}>1D</Text>
+        <Text style={{ fontSize: 14, fontWeight: '400', color: '#00FF7F' }}>1D</Text>
         <Text style={{ fontSize: 14, fontWeight: '400', color: '#707070' }}>1W</Text>
         <Text style={{ fontSize: 14, fontWeight: '400', color: '#707070' }}>1M</Text>
         <Text style={{ fontSize: 14, fontWeight: '400', color: '#707070' }}>1Y</Text>
@@ -196,7 +214,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     width: 414,
     height: 88,
-    marginVertical: 45,
+    marginVertical: 55,
   },
   midWrapper: {
     flexDirection: 'row',
