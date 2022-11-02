@@ -1,7 +1,7 @@
-# McarrfixUI
+# Pyramid Inc.
 # Introduction
 
-A React Native Application's Home Page for McarrFix. 
+A React Native Application for Pyramid Inc. 
 
 
 Current Maintainer: Sisco Cherono <siscoronojey@gmail.com>
@@ -16,7 +16,7 @@ Current Maintainer: Sisco Cherono <siscoronojey@gmail.com>
 # Installation
 ```
 git clone github url for this project
-cd mcarrfixui
+cd Pyramidportfolio
 npm install
 react-native start
 ```
@@ -33,7 +33,6 @@ react-native start
  
 ## Necessary Dependencies
 ```
-- React native reanimated
+- React native charts
 - React Native Navigation
 - React Native Safe area contect
-- React Native Dropdown Select List
